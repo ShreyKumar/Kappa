@@ -66,11 +66,11 @@ $(document).ready(function(){
                             "AD Carry: " + String(adc) + " <br />" +
                             "Support: " + String(sup) + " <br />");
                     var all_roles = [];
-                    all_roles.append(top);
-                    all_roles.append(mid);
-                    all_roles.append(jung);
-                    all_roles.append(adc);
-                    all_roles.append(sup);
+                    all_roles.push(top);
+                    all_roles.push(mid);
+                    all_roles.push(jung);
+                    all_roles.push(adc);
+                    all_roles.push(sup);
                     var best = "";
 
                     if(is_max(top, all_roles)){
@@ -84,7 +84,7 @@ $(document).ready(function(){
                     } else {
                         best = "Support";
                     }
-                    $("#info").append("You are a " + best + "main");
+                    $("#info").push("You are a " + best + "main");
 
                 }).fail(function(error){
                     handle_status(error.status);
