@@ -3,12 +3,13 @@ $(document).ready(function(){
     $("input#search").click(function(){
         var display_name = $("input#name").val();
         var name = $("input#name").val().toLowerCase().replace(/ /g,'');
+        var api_key = "49efddbc-8f13-4f0e-aae7-e310d8fb3895";
 
         if(name.length == 0){
             $("#info").html("Enter your summoner name!");
         } else {
             //get summoner id
-            var getID = "https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/" + String(name) + "?api_key=15d8a0b1-a6e3-4dfc-9031-4247248f001b";
+            var getID = "https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/" + String(name) + "?api_key=" + api_key;
             var summonerID;
 
             $.getJSON(getID, function(data){
@@ -21,7 +22,7 @@ $(document).ready(function(){
 
             function get_data(summonerID){
 
-                var getMatchList = "https://na.api.pvp.net/api/lol/na/v2.2/matchlist/by-summoner/" + summonerID + "?api_key=15d8a0b1-a6e3-4dfc-9031-4247248f001b";
+                var getMatchList = "https://na.api.pvp.net/api/lol/na/v2.2/matchlist/by-summoner/" + summonerID + "?api_key=" + api_key;
                 $.getJSON(getMatchList, function(data){
 
                     //total matches object
@@ -80,4 +81,3 @@ $(document).ready(function(){
 
     });
 });
-
