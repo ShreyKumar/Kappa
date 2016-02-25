@@ -1,0 +1,48 @@
+
+@import url(https://fonts.googleapis.com/css?family=Arimo:400);
+body {
+    font-family: 'Arimo', sans-serif;
+    background-color: rgb(255, 51, 51);
+    color: white;
+}
+h1 {
+    color:blue;
+    text-align: center;
+}
+div#container {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 4%;
+    text-align: center;
+}
+h1#title {
+    margin-top: 3px;
+    padding-right: 147px;
+}
+p#subtitle {
+    color: grey;
+    font-size: 12px;
+    margin-top: -18px;
+}
+h3#credits {
+    margin-left: auto;
+    margin-right: auto;
+    width: 38%;
+}
+form#search input#name {
+    width: 80%;
+    border: none;
+    font-size: 20px;
+    border: 1px solid;
+    padding: 5.5px;
+}
+form#search input#search {
+    width: 80%;
+    margin-top: 34px;
+}
+
