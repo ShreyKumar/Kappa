@@ -65,6 +65,26 @@ $(document).ready(function(){
                             "Mid: " + String(mid) + " <br />" +
                             "AD Carry: " + String(adc) + " <br />" +
                             "Support: " + String(sup) + " <br />");
+                    var all_roles = [];
+                    all_roles.append(top);
+                    all_roles.append(mid);
+                    all_roles.append(jung);
+                    all_roles.append(adc);
+                    all_roles.append(sup);
+                    var best = "";
+
+                    if(is_max(top, all_roles)){
+                        best = "Top";
+                    } else if(is_max(mid, all_roles)){
+                        best = "Mid";
+                    } else if(is_max(jung, all_roles)){
+                        best = "Jungle";
+                    } else if(is_max(adc, all_roles)){
+                        best = "AD Carry";
+                    } else {
+                        best = "Support";
+                    }
+                    $("#info").append("You are a " + best + "main");
 
                 }).fail(function(error){
                     handle_status(error.status);
@@ -77,7 +97,14 @@ $(document).ready(function(){
                     $("#info").html("Data not found! :( The Riot API might be buggy or down.");
                 }
             }
+
+            function is_max(item, items){
+                return Math.max.apply(Math, items) == item;
+            }
         }
+
+        //hide the form
+        $("form#search").hide();
 
     });
 });
