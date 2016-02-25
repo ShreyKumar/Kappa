@@ -56,15 +56,6 @@ $(document).ready(function(){
                         }
                     }
 
-                    $("#info").html();
-                    //output message
-                    $("#info").html("You played " + String(total) + " ranked games in total.<br />" +
-                            " Here are your top played roles:<br />" +
-                            "Top: " + String(top) + " <br />" +
-                            "Jungle: " + String(jung) + " <br />" +
-                            "Mid: " + String(mid) + " <br />" +
-                            "AD Carry: " + String(adc) + " <br />" +
-                            "Support: " + String(sup) + " <br />");
                     var all_roles = [];
                     all_roles.push(top);
                     all_roles.push(mid);
@@ -84,7 +75,17 @@ $(document).ready(function(){
                     } else {
                         best = "Support";
                     }
-                    $("#info").append("You are a " + best + "main");
+
+                    $("#info").html();
+                    //output message
+                    $("#info").html("You played " + String(total) + " ranked games in total.<br />" +
+                            " Here are your top played roles:<br />" +
+                            "Top: " + String(top) + " <br />" +
+                            "Jungle: " + String(jung) + " <br />" +
+                            "Mid: " + String(mid) + " <br />" +
+                            "AD Carry: " + String(adc) + " <br />" +
+                            "Support: " + String(sup) + " <br />" +
+                            "You are a " + best + " main");
 
                 }).fail(function(error){
                     handle_status(error.status);
