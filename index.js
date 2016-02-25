@@ -84,7 +84,7 @@ $(document).ready(function(){
                     } else {
                         best = "Support";
                     }
-                    $("#info").push("You are a " + best + "main");
+                    $("#info").append("You are a " + best + "main");
 
                 }).fail(function(error){
                     handle_status(error.status);
