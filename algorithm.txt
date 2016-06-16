@@ -1,0 +1,6 @@
+1. Get Summoner ID
+2. Find all leagues
+3. Find ranked wins if wins > loses and on hotstreak then 10 LP per game estimate (100 - currentLP)/10 = games needed to climb
+show other routes including losing games
+if losses > wins then 10 LP per game until normalises and then 20 LP per game to climb
+if wins > loses and not on hotstreak then 20 LP per game 

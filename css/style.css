@@ -1,0 +1,138 @@
+body {
+    font-family: 'Questrial', sans-serif;
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+}
+#bg {
+    position: fixed; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto;
+    z-index: -100;
+    background-size: cover;
+    margin: 0 auto;
+}
+#main {
+    display: block;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+}
+#search {
+    border: 0;
+    width: 500px;
+    height: 50px;
+    font-size: 30px;
+    background-color: transparent;
+    color: white;
+    margin-top: 50px;
+    outline: none;
+    border-top: white 2px ridge;
+    border-left: white 2px ridge;
+    border-right: white 2px ridge;
+    border-bottom: white 2px dotted;
+}
+input::-webkit-input-placeholder {
+    color: white !important;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+    color: white !important;  
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+    color: white !important;  
+}
+ 
+input:-ms-input-placeholder {  
+    color: white !important;  
+}
+#logo {
+    font-weight: bolder;
+    padding-top: 100px;
+    font-size: 50px;
+    color: #26519E; 
+}
+#box {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: block;
+    width: 800px;
+    height: auto;
+    min-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+ul {
+    list-style-type: none;
+    margin-top: 50px;
+}
+ul li {
+    display: block;
+    width: 72.7px;
+    float: left;
+    height: 30px;
+    font-size: 20px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+ul li:last-child {
+    border-right: none;
+}
+ul li:first-child {
+    margin-left: -40px;
+}
+ul li.selected, ul li:not(.selected):hover {
+    background-color: #fff;
+    color: #000;
+}
+ul li:not(.selected):hover {
+    cursor: pointer;
+}
+
+/* Result box customization */
+#result-box {
+    display: block;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#league-name {
+    border-bottom: ridge 1px #fff;
+}
+.entry span {
+    display: block;
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+#rank-img {
+    margin-left: 174px;
+}
+#me.entry span{
+    background-color: white;
+    color: black;
+}
+#advice {
+    display: block;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    margin-top: 130px;
+}
+#advice .lp, #advice .rate {
+    color: red;
+}
+.games {
+    width: 40px;
+    background-color: transparent;
+    border: 2px solid #fff;
+}

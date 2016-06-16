@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Inconsolata|Anton|Questrial' rel='stylesheet' type='text/css'>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/style.css" media="screen" />
+    </head>
+    <body>
+        <video autoplay loop id="bg" muted>
+            <source src="mp4/rift.mp4" type="video/mp4">
+        </video>
+        <div id="main">
+            <div id="box">
+                <center>
+                    <h1 id="logo">Kappa.</h1>
+                        <input type="text" id="search" placeholder="Enter Summoner name" />
+                    <ul id="region">
+                        <li id="br" class="unselected">BR</li>
+                        <li id="eune" class="unselected">EUNE</li>
+                        <li id="eunw" class="unselected">EUNW</li>
+                        <li id="jp" class="unselected">JP</li>
+                        <li id="kr" class="unselected">KR</li>
+                        <li id="lan" class="unselected">LAN</li>
+                        <li id="las" class="unselected">LAS</li>
+                        <li id="na" class="selected">NA</li>
+                        <li id="oce" class="unselected">OCE</li>
+                        <li id="ru" class="unselected">RU</li>
+                        <li id="tr" class="unselected">TR</li>
+                    </ul>
+                </center>
+                <div id="result-box">
+                    <h3 id="league-name">Akali's Slayers: Bronze III  
+                        <img id="rank-img" src="png/bronze.png" width="60px" height="50px" />
+                    </h3>
+                    <div id="entries">
+                        <div class="entry">
+                            <span class="rank">1</span>
+                            <span class="name">Summoner name</span>
+                            <span class="lp">6 LP</span>
+                        </div>
+                        <div class="entry">
+                            <span class="rank">1</span>
+                            <span class="name">Summoner name</span>
+                            <span class="lp">6 LP</span>
+                        </div>
+                        <div id="me" class="entry">
+                            <span class="rank">1</span>
+                            <span class="name">Summoner name</span>
+                            <span class="lp">6 LP</span>
+                        </div>
+                        <div class="entry">
+                            <span class="rank">1</span>
+                            <span class="name">Summoner name</span>
+                            <span class="lp">6 LP</span>
+                        </div>
+                        <div class="entry">
+                            <span class="rank">1</span>
+                            <span class="name">Summoner name</span>
+                            <span class="lp">6 LP</span>
+                        </div>
+                    </div>
+                    <div id="advice-box">
+                        <div id="advice">
+                            I want to play <input class="games" /> more games today
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- js -->
+        <script src="https://code.jquery.com/jquery-2.2.3.min.js" type="text/javascript"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="js/main.js" type="text/javascript"></script>
+    </body>
+</html>
